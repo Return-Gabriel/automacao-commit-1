@@ -1,4 +1,4 @@
-name: commit-automatico
+Return-Gabriel: commit-automatico
 
 on:
   schedule:
@@ -21,8 +21,8 @@ jobs:
       - name: Gerar arquivo e commit
         run: |
           echo "$(date '+%Y-%m-%d %H:%M:%S UTC')" > dataAtual.txt  
-          git config user.name "feliipecardosoo"                  
-          git config user.email "fglibino@gmail.com"            
+          git config user.name "Return-Gabriel"                  
+          git config user.email "alves.santos.biel@gmail.com"            
           git add dataAtual.txt                                  
           git commit -m "Atualização diária com a data $(date)" || echo "Nada para commitar"  
           # Faz o commit com mensagem contendo a data; se não houver mudanças, exibe "Nada para commitar"
